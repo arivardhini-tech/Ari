@@ -1,12 +1,10 @@
- import os
+import os
 import importlib
 
 def test_html_file_created():
-    # Importing dept.py executes the code
     import dept
     importlib.reload(dept)
 
-    # Check if the file was created
     assert os.path.exists("department.html")
 
 
